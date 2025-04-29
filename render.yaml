@@ -1,7 +1,0 @@
-services:
-  - name: library-management-system
-    type: web
-    env: docker
-    plan: free
-    branch: main
-    autoDeploy: true
