@@ -4,7 +4,7 @@ FROM openjdk:11
 # Create working directory
 WORKDIR /app
 
-# Copy all files from project
+# Copy the application files
 COPY . /app
 
 # Install Tomcat (or include your servlet runner)
@@ -14,9 +14,10 @@ RUN apt-get update && \
     tar -xvzf apache-tomcat-9.0.85.tar.gz && \
     mv apache-tomcat-9.0.85 tomcat
 
-# Move compiled code or WAR if needed
-# Copy your compiled .class or .war into tomcat/webapps/
-# For simplicity, let’s assume your project structure is already using `webapp/`
+# Move WAR file into Tomcat's webapps folder
+# Assuming your project produces a WAR file, adjust accordingly
+# If you don't have a WAR file yet, you need to build it first
+COPY ./target/your-app.war /tomcat/webapps/ROOT.war
 
 # Expose port
 EXPOSE 8080
