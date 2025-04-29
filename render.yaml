@@ -4,6 +4,4 @@ services:
     env: docker
     plan: free
     branch: main
-    buildCommand: "docker build -t library-management-system ."
-    startCommand: "docker run -p 8080:8080 library-management-system"
     autoDeploy: true

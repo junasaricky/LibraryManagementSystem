@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm apache-tomcat-9.0.100.tar.gz
 
 # Copy your WAR file
-COPY target/LibraryManagementSystem.war app/tomcat/webapps/
+COPY target/LibraryManagementSystem.war /app/tomcat/webapps/
 
 EXPOSE 8080
 CMD ["./tomcat/bin/catalina.sh", "run"]
