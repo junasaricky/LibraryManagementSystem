@@ -10,7 +10,7 @@ RUN apt-get update && \
     mv apache-tomcat-9.0.100 tomcat && \
     rm apache-tomcat-9.0.100.tar.gz
 
-# 🔥 Copy your WAR file
+# Copy your WAR file
 COPY target/LibraryManagementSystem.war tomcat/webapps/
 
 EXPOSE 8080
