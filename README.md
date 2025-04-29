@@ -95,7 +95,7 @@ The project follows the **Model-View-Controller** design pattern for clean separ
 ## Author
 **Ricky Junasa**  
 For educational purposes only.  
-GitHub: https://github.com/dashboard
+GitHub: https://github.com/junasaricky/LibraryManagementSystem
 Email: junasa.ricky@gmail.com
 
 ---
