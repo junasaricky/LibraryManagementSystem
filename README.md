@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Library Management System (LMS)
 
 This is a full-featured **Library Management System** built with **Java (Servlets + JSP)** using **MVC architecture** and **SQLite** for backend database. It allows both Admin and Borrowers to manage and interact with the system efficiently.
@@ -101,3 +102,6 @@ Email: junasa.ricky@gmail.com
 
 ## License
 MIT License
+=======
+# LibraryManagementSystem
+>>>>>>> 01ae0721acdb5ce33675b8b6d6f6052d739384bb
