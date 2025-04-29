@@ -8,10 +8,10 @@ COPY target/LibraryManagementSystem.war /usr/local/tomcat/webapps/
 # Download and set up Tomcat
 RUN apt-get update && \
     apt-get install -y curl && \
-    curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz && \
-    tar -xvzf apache-tomcat-9.0.85.tar.gz && \
-    mv apache-tomcat-9.0.85 tomcat && \
-    rm apache-tomcat-9.0.85.tar.gz
+    curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.100/bin/apache-tomcat-9.0.100.tar.gz && \
+    tar -xvzf apache-tomcat-9.0.100.tar.gz && \
+    mv apache-tomcat-9.0.100 tomcat && \
+    rm apache-tomcat-9.0.100.tar.gz
 
 # Move the WAR file into Tomcat’s webapps folder
 RUN mv /usr/local/tomcat/webapps/LibraryManagementSystem.war ./tomcat/webapps/
