@@ -107,15 +107,15 @@ Make sure the following `.jar` files are present in the folder:
 
 ---
 
-### 🛠️ Java EE Setup Notes (Eclipse)
+###	Java EE Setup Notes (Eclipse)
 
-#### ✅ Add Java EE Runtime (e.g., Apache Tomcat)
+#### Add Java EE Runtime (e.g., Apache Tomcat)
 If you're using **Eclipse**, make sure you configure the server properly:
 1. Go to `Window` → `Preferences` → `Server` → `Runtime Environments`
 2. Click **Add** → choose **Apache Tomcat**
 3. Point to your Tomcat installation directory and click Finish
 
-#### ✅ Fix – Missing Servlet API Errors
+#### Fix – Missing Servlet API Errors
 If you see errors like `javax.servlet.http.HttpServlet not found`, follow these steps:
 
 1. **Right-click your project** → `Build Path` → `Configure Build Path`  
