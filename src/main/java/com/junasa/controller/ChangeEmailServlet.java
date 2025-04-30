@@ -56,7 +56,7 @@ public class ChangeEmailServlet extends HttpServlet {
 
             if (tokenUpdated && pendingEmailUpdated) {
                 // Send confirmation email
-                String confirmLink = "http://localhost:8080/Library/ConfirmEmailChange?token=" + token;
+                String confirmLink = "http://localhost:8080/LibraryManagementSystem/ConfirmEmailChange?token=" + token;
 
                 String subject = "Confirm Your Email Change";
                 String message = "Hello " + currentUser.getFname() + ",\n\n"
