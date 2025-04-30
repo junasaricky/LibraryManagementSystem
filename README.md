@@ -83,12 +83,48 @@ The project follows the **Model-View-Controller** design pattern for clean separ
 
 ---
 
+## Required Libraries
+
+Make sure the following `.jar` files are present in the folder:  
+`/WebContent/WEB-INF/lib/` or `/src/main/webapp/WEB-INF/lib/` (depending on your project structure):
+
+- `gson-2.13.1.jar`
+- `javax.activation-1.2.0.jar`
+- `javax.mail.jar`
+- `jstl-1.2.jar`
+- `sqlite-jdbc-3.49.1.0.jar`
+
+> **Note:** If these files are missing, download them manually and place them in the `WEB-INF/lib` folder so Eclipse/Tomcat can load them during runtime.
+
+---
+
 ## How to Run
 1. Clone this repository
 2. Open in your favorite Java IDE (Eclipse/NetBeans/IntelliJ)
 3. Configure server (Apache Tomcat)
 4. Add SQLite JDBC driver
 5. Run the project and open in browser
+
+---
+
+### 🛠️ Java EE Setup Notes (Eclipse)
+
+#### ✅ Add Java EE Runtime (e.g., Apache Tomcat)
+If you're using **Eclipse**, make sure you configure the server properly:
+1. Go to `Window` → `Preferences` → `Server` → `Runtime Environments`
+2. Click **Add** → choose **Apache Tomcat**
+3. Point to your Tomcat installation directory and click Finish
+
+#### ✅ Fix – Missing Servlet API Errors
+If you see errors like `javax.servlet.http.HttpServlet not found`, follow these steps:
+
+1. **Right-click your project** → `Build Path` → `Configure Build Path`  
+2. Go to the **Libraries** tab  
+3. Ensure that **Apache Tomcat** or **Servlet API** is listed  
+4. If **missing**:
+   - Click **Add Library** → choose **Server Runtime**
+   - Select your installed **Tomcat version**
+   - Click **Finish**, then **Apply and Close*
 
 ---
 
