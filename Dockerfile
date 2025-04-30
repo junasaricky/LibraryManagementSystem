@@ -3,7 +3,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy WAR first (early stage)
-COPY LibraryManagementSystem.war /app/ROOT.war
+COPY /LibraryManagementSystem.war /app/ROOT.war
 
 # Install wget and tomcat
 RUN apt-get update && \
